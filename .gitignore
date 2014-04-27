@@ -1,0 +1,7 @@
+.idea
+vendor
+log
+tests/
+!tests/config
+!tests/src
+storage

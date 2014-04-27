@@ -1,0 +1,76 @@
+{
+	"name":              "dreamfactory/app-console",
+	"description":       "DreamFactory Services Platform(tm) Console Application",
+	"homepage":          "http://dreamfactorysoftware.github.io/#oasys",
+	"keywords":          ["console", "logging", "examples", "dsp"    ],
+	"type":              "dreamfactory-plugin",
+	"license":           ["Apache-2.0"],
+	"authors":           [
+		{
+			"name":  "Jerry Ablan",
+			"email": "jerryablan@dreamfactory.com"
+		}
+	],
+	"support":           {
+		"email":  "support@dreamfactory.com",
+		"issues": "https://github.com/dreamfactorysoftware/app-console/issues",
+		"wiki":   "https://github.com/dreamfactorysoftware/app-console/wiki",
+		"source": "https://github.com/dreamfactorysoftware/app-console"
+	},
+	"config":            {
+		"discard-changes": true
+	},
+	"repositories":      [
+		{
+			"type": "pear",
+			"url":  "http://pear.php.net"
+		}
+	],
+	"minimum-stability": "dev",
+	"require":           {
+		"php":                            ">=5.3.18",
+		"dreamfactory/package-installer": "@stable"
+	},
+	"require-dev":       {
+		"pear-pear.php.net/HTTP_Request2":      "*",
+		"pear-pear.php.net/Net_URL2":           "*",
+		"pear-pear.php.net/Mail_Mime":          "*",
+		"pear-pear.php.net/Mail_mimeDecode":    "*",
+		"dreamfactory/lib-php-common-platform": "~1.5@dev",
+		"phpunit/phpunit":                      "~3.7@stable",
+		"phpunit/phpunit-mock-objects":         "@stable",
+		"phpunit/phpunit-selenium":             "@stable",
+		"phpunit/phpunit-story":                "@stable",
+		"phpunit/dbunit":                       "@stable",
+		"phpunit/php-code-coverage":            "@stable",
+		"phpunit/php-text-template":            "@stable",
+		"phpunit/php-token-stream":             "@stable",
+		"phpunit/php-timer":                    "@stable",
+		"phpunit/php-invoker":                  "@stable"
+	},
+	"extra":             {
+		"branch-alias": {
+			"1.0.x-dev": "dev-develop"
+		},
+		"data":         {
+			"application": {
+				"name":              "Platform Console",
+				"api-name":          "app-console",
+				"description":       "A DSP console application.",
+				"start-url":         "/index.php",
+				"url-is-external":   false,
+				"import-url":        "https://github.com/dreamfactorysoftware/app-console/archive/master.zip",
+				"active":            true,
+				"fullscreen":        false,
+				"fullscreen-toggle": true,
+				"toggle-location":   "top"
+			}
+		},
+		"links":        [
+			{
+				"target": "src/",
+				"link":   "console"
+			}
+		]
+	}
+}
